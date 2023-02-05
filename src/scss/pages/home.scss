@@ -57,7 +57,7 @@
   justify-content: center;
   flex-wrap: wrap;
   -moz-column-gap: 30px;
-       column-gap: 30px;
+  column-gap: 30px;
   row-gap: 30px;
 }
 
@@ -78,4 +78,10 @@
   font-size: 24px;
   line-height: 1.3;
   color: var(--project-card-text);
+}
+
+@media (max-width: 620px) {
+  .project__title {
+    font-size: 22px;
+  }
 }

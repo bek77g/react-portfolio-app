@@ -1,9 +1,27 @@
-import { Link } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 //Icons
 import darkIcon from '../assets/icons/moon.svg';
 import lightIcon from '../assets/icons/sun.svg';
 
 function Header() {
+  const [isDark, setIsDark] = useState(
+    JSON.parse(localStorage.getItem('darkMode')) || false
+  );
+
+  useEffect(() => {
+    document.body.classList.toggle('dark');
+    localStorage.setItem('darkMode', isDark);
+  }, [isDark]);
+
+  useEffect(() => {
+    if (JSON.parse(localStorage.getItem('darkMode'))) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+  }, []);
+
   return (
     <header className='nav'>
       <div className='container'>
@@ -12,7 +30,9 @@ function Header() {
             <strong>Freelancer</strong> portfolio
           </Link>
 
-          <button className='dark-mode-btn'>
+          <button
+            className={`dark-mode-btn ${isDark ? 'dark-mode-btn--active' : ''}`}
+            onClick={() => setIsDark(!isDark)}>
             <img
               src={lightIcon}
               alt='Light mode'
@@ -27,19 +47,19 @@ function Header() {
 
           <ul className='nav-list'>
             <li className='nav-list__item'>
-              <Link to='/' className='nav-list__link nav-list__link--active'>
+              <NavLink to='/' className='nav-list__link'>
                 Projects
-              </Link>
+              </NavLink>
             </li>
             <li className='nav-list__item'>
-              <Link to='/skills' className='nav-list__link'>
+              <NavLink to='/skills' className='nav-list__link'>
                 Skills
-              </Link>
+              </NavLink>
             </li>
             <li className='nav-list__item'>
-              <Link to='./contacts' className='nav-list__link'>
+              <NavLink to='./contacts' className='nav-list__link'>
                 Contacts
-              </Link>
+              </NavLink>
             </li>
           </ul>
         </div>
