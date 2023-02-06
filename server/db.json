@@ -1,0 +1,68 @@
+{
+  "projects": [
+    {
+      "id": 1,
+      "title": "Gaming streaming portal",
+      "previewPicture": "/projects/01.jpg",
+      "fullPisture": "/projects/01.jpg",
+      "skills": ["ReactJs", "Node.js", "MongoDB"],
+      "githubLink": "#"
+    },
+    {
+      "id": 2,
+      "title": "Video service",
+      "previewPicture": "/projects/02.jpg",
+      "fullPisture": "/projects/02.jpg",
+      "skills": ["Dart", "Node.js", "MongoDB"],
+      "githubLink": "#"
+    },
+    {
+      "id": 3,
+      "title": "Video portal",
+      "previewPicture": "/projects/03.jpg",
+      "fullPisture": "/projects/03.jpg",
+      "skills": ["Ruby", "Node.js", "MongoDB"],
+      "githubLink": "#"
+    },
+    {
+      "id": 4,
+      "title": "Dating app",
+      "previewPicture": "/projects/04.jpg",
+      "fullPisture": "/projects/04.jpg",
+      "skills": ["Django", "Node.js", "MongoDB"],
+      "githubLink": "#"
+    },
+    {
+      "id": 5,
+      "title": "Landing",
+      "previewPicture": "/projects/05.jpg",
+      "fullPisture": "/projects/05.jpg",
+      "skills": ["GoLang", "Node.js", "MongoDB"],
+      "githubLink": "#"
+    },
+    {
+      "id": 6,
+      "title": "Gaming community",
+      "previewPicture": "/projects/06.jpg",
+      "fullPisture": "/projects/06.jpg",
+      "skills": ["Rust", "Node.js", "MongoDB"],
+      "githubLink": "#"
+    },
+    {
+      "id": 7,
+      "title": "Todo List",
+      "previewPicture": "/projects/01.jpg",
+      "fullPisture": "/projects/01.jpg",
+      "skills": ["C++", "Node.js", "MongoDB"],
+      "githubLink": "#"
+    },
+    {
+      "id": 8,
+      "title": "Notion clone",
+      "previewPicture": "/projects/03.jpg",
+      "fullPisture": "/projects/03.jpg",
+      "skills": ["Java", "Node.js", "MongoDB"],
+      "githubLink": "#"
+    }
+  ]
+}
